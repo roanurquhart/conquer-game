@@ -17,3 +17,32 @@ body {
   background-color: "#c2363d";
 }
 
+p.territory {
+  width: 20px;
+  height: 20px;
+  border-style: solid;
+  border-color: black;
+  background-color: bisque;
+  margin: 0;
+  padding: 0;
+  border-width: 1px;
+}
+p.hazard {
+  visibility: hidden;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+div.map {
+  margin: 0;
+  padding: 0;
+}
+
+div.row {
+  margin: 0;
+  padding: 0;
+  height:20px;
+}
+
