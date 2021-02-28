@@ -26,6 +26,8 @@ p.territory {
   margin: 0;
   padding: 0;
   border-width: 1px;
+  font-size: 60%;
+  color: black;
 }
 p.hazard {
   visibility: hidden;

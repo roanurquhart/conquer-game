@@ -1,7 +1,9 @@
 import React, { useState} from 'react';
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Hazard from './Hazard.js';
 import './App.css';
+import Territory from './Territory.js';
 
 
 function GameMap() {
@@ -25,10 +27,10 @@ function GameMap() {
     function addMapRow(rowNum, columns) {
         let row = [];
         for(let i = 0; i < columns.length; i++) {
-            if (columns[i] === 1) {
-                row.push(<p key={rowNum.toString() + ',' + i.toString()} class="territory"></p>);
+            if (columns[i] === 0) {
+                row.push(<Hazard></Hazard>);
             } else {
-                row.push(<p key={rowNum.toString() + ',' + i.toString()} class="hazard"></p>);
+                row.push(<Territory value={columns[i]}></Territory>);
             }
         }
         row.push(<br></br>)
